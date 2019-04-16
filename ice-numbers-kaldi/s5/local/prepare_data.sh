@@ -16,12 +16,14 @@ waves_dir=$1
 
 ls -1 $waves_dir > data/local/waves_all.list
 # cat data/local/waves_all.list
-# sed -i.bak 's/^.\{5\}//g' data/local/waves_all.list
-cat data/local/waves_all.list
 
 cd data/local
 
-../../local/create_nums_waves_test_train_third.pl waves_all.list waves.test waves.train
+# For using first speaker as testing material
+# ../../local/create_nums_waves_test_train_first.pl waves_all.list waves.test waves.train
+
+# For using 10% of utterances (cross-speakers) as testing material
+../../local/create_nums_waves_test_train.pl waves_all.list waves.test waves.train
 
 ../../local/create_nums_wav_scp.pl ${waves_dir} waves.test > ${test_base_name}_wav.scp
 

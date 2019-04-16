@@ -6,7 +6,7 @@ Hinrik Hafsteinsson - Spring 2019
 
 Randomization script used for generating number strings for training/testing material.
 Outputs a directory with 8 .txt files each with 20 lines of 10 randomized digits
-and mathemiatics symbols.
+and math symbols, plus a combined .txt with all lines.
 '''
 
 directions = ['upp', 'niður', 'hægri', 'vinstri']

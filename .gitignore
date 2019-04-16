@@ -1,7 +1,6 @@
 
 # first level subdirectories
-boll/
-tha/
+parts/
 waves/
 waves_backup/
 .DS_store

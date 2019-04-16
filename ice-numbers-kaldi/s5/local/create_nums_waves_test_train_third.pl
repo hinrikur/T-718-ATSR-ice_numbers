@@ -21,7 +21,7 @@ while ($l = <FL>)
 {
 	chomp($l);
 	$i++;
-	if ( $i <= $nol/3 )
+	if ( $i <= $nol/6 )
 	{
 		print TESTLIST "$l\n";
 	}
