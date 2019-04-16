@@ -1,0 +1,19 @@
+# first level subdirectories
+boll/
+tha/
+waves/
+waves_backup/
+.DS_store
+./*.pdf
+
+# kaldi subdirectoreis
+ice-numbers-kaldi/s5/data/
+mfcc/
+local_trans/
+exp/
+waves_nums_allt/
+waves_nums_kk1/
+waves_nums_kk2/
+waves_nums_kv1/
+input_singlephones/
+input_splitphones/

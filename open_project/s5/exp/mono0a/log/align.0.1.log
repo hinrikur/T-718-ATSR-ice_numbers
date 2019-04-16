@@ -1,0 +1,17 @@
+# align-equal-compiled "ark:gunzip -c exp/mono0a/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_nums/split1/1/utt2spk scp:data/train_nums/split1/1/cmvn.scp scp:data/train_nums/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono0a/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_nums/split1/1/utt2spk scp:data/train_nums/split1/1/cmvn.scp scp:data/train_nums/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono0a/0.1.acc 
+# Started at Mon Apr 15 22:07:28 GMT 2019
+#
+align-equal-compiled 'ark:gunzip -c exp/mono0a/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_nums/split1/1/utt2spk scp:data/train_nums/split1/1/cmvn.scp scp:data/train_nums/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+gmm-acc-stats-ali --binary=true exp/mono0a/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_nums/split1/1/utt2spk scp:data/train_nums/split1/1/cmvn.scp scp:data/train_nums/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono0a/0.1.acc 
+apply-cmvn --utt2spk=ark:data/train_nums/split1/1/utt2spk scp:data/train_nums/split1/1/cmvn.scp scp:data/train_nums/split1/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train_nums/split1/1/utt2spk scp:data/train_nums/split1/1/cmvn.scp scp:data/train_nums/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.183~1-9f981]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 40 utterances, errors on 0
+LOG (align-equal-compiled[5.5.183~1-9f981]:main():align-equal-compiled.cc:107) Success: done 40 utterances.
+LOG (apply-cmvn[5.5.183~1-9f981]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 40 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.183~1-9f981]:main():gmm-acc-stats-ali.cc:112) Done 40 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.183~1-9f981]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -106.912 over 78484 frames.
+LOG (gmm-acc-stats-ali[5.5.183~1-9f981]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Apr 15 22:07:29 GMT 2019, elapsed time 1 seconds

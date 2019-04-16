@@ -1,0 +1,6 @@
+# compute-wer-bootci --mode=present ark:exp/mono0a/decode_test_nums/scoring_kaldi/test_filt.txt ark:exp/mono0a/decode_test_nums/scoring_kaldi/penalty_1.0/16.txt > exp/mono0a/decode_test_nums/scoring_kaldi/wer_details/wer_bootci 
+# Started at Mon Apr 15 22:09:35 GMT 2019
+#
+compute-wer-bootci --mode=present ark:exp/mono0a/decode_test_nums/scoring_kaldi/test_filt.txt ark:exp/mono0a/decode_test_nums/scoring_kaldi/penalty_1.0/16.txt 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Apr 15 22:09:35 GMT 2019, elapsed time 0 seconds

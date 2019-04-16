@@ -1,0 +1,24 @@
+
+\data\
+ngram 1=18
+
+\1-grams:
+-1 einn
+-1 tveir
+-1 thrir
+-1 fjorir
+-1 fimm
+-1 sex
+-1 sjo
+-1 atta
+-1 niu
+-1 null
+-1 plus
+-1 minus
+-1 mult
+-1 div
+-1 sam
+-99 <s>
+-1 </s>
+
+\end\

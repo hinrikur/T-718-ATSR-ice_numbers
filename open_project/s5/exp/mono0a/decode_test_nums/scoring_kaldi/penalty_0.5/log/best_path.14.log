@@ -1,0 +1,52 @@
+# lattice-scale --inv-acoustic-scale=14 "ark:gunzip -c exp/mono0a/decode_test_nums/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/mono0a/graph_tgpr/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/mono0a/graph_tgpr/words.txt | cat > exp/mono0a/decode_test_nums/scoring_kaldi/penalty_0.5/14.txt 
+# Started at Mon Apr 15 22:09:31 GMT 2019
+#
+lattice-scale --inv-acoustic-scale=14 'ark:gunzip -c exp/mono0a/decode_test_nums/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/mono0a/graph_tgpr/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_+_6_÷_=_5_9_4_2_3_1_0_-_x_8_7, best cost 141.741 + 10750.3 = 10892 over 1507 frames.
+kk1_+_6_÷_=_5_9_4_2_3_1_0_-_x_8_7 plus sex div sam mult niu fjorir tveir thrir einn null minus mult atta sjo 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_+_8_x_0_4_2_3_-_1_9_÷_5_=_7_6, best cost 140.641 + 9612.74 = 9753.38 over 1317 frames.
+kk1_+_8_x_0_4_2_3_-_1_9_÷_5_=_7_6 einn plus atta mult plus fjorir tveir thrir minus einn niu div fimm sam mult sex 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_-_0_x_6_8_+_2_4_3_1_7_9_5_÷_=, best cost 151.115 + 10017.7 = 10168.9 over 1372 frames.
+kk1_-_0_x_6_8_+_2_4_3_1_7_9_5_÷_= einn einn minus null mult sex atta plus tveir plus thrir einn mult niu fimm div sam 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_-_2_6_=_9_5_8_0_4_x_3_1_+_7_÷, best cost 142.504 + 10346.2 = 10488.7 over 1428 frames.
+kk1_-_2_6_=_9_5_8_0_4_x_3_1_+_7_÷ minus tveir sex sam niu mult atta null plus mult thrir einn plus mult div 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_-_x_4_2_1_÷_0_3_9_7_6_=_8_+_5, best cost 136.708 + 9908.62 = 10045.3 over 1345 frames.
+kk1_-_x_4_2_1_÷_0_3_9_7_6_=_8_+_5 minus mult fjorir tveir einn div null thrir niu mult sex sam div plus fimm 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_0_4_÷_3_9_-_7_1_8_+_2_6_=_x_5, best cost 143.411 + 10032.3 = 10175.7 over 1368 frames.
+kk1_0_4_÷_3_9_-_7_1_8_+_2_6_=_x_5 einn plus fjorir div thrir niu minus mult einn atta plus plus sex sam mult fimm 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_1_7_4_9_=_5_+_0_x_8_÷_3_-_2_6, best cost 153.229 + 10996.8 = 11150 over 1512 frames.
+kk1_1_7_4_9_=_5_+_0_x_8_÷_3_-_2_6 einn niu fjorir niu sam niu plus null mult atta div thrir minus tveir sex einn 
+LOG (lattice-scale[5.5.183~1-9f981]:main():lattice-scale.cc:107) Done 20 lattices.
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_1_=_+_x_5_4_3_÷_9_2_8_7_-_6_0, best cost 142.581 + 11502 = 11644.6 over 1608 frames.
+kk1_1_=_+_x_5_4_3_÷_9_2_8_7_-_6_0 einn sam plus mult fimm fjorir thrir div niu tveir atta mult minus sex null 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_2_9_÷_=_8_7_0_6_1_3_+_x_5_4_-, best cost 143.38 + 10646.5 = 10789.9 over 1493 frames.
+kk1_2_9_÷_=_8_7_0_6_1_3_+_x_5_4_- einn tveir niu div sam atta mult null sex einn thrir plus mult mult plus minus 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_4_+_6_2_8_7_0_9_=_-_5_1_x_3_÷, best cost 148.549 + 11807.1 = 11955.7 over 1651 frames.
+kk1_4_+_6_2_8_7_0_9_=_-_5_1_x_3_÷ fjorir plus sex tveir atta mult null niu sam minus fimm einn mult thrir div 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_4_1_x_5_9_÷_8_7_6_+_3_=_0_-_2, best cost 136.978 + 9998.73 = 10135.7 over 1373 frames.
+kk1_4_1_x_5_9_÷_8_7_6_+_3_=_0_-_2 einn plus einn mult fimm niu div atta sjo sex plus thrir sam null minus tveir 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_4_6_3_1_7_2_8_+_x_=_÷_0_-_9_5, best cost 139.71 + 10265.7 = 10405.4 over 1410 frames.
+kk1_4_6_3_1_7_2_8_+_x_=_÷_0_-_9_5 plus sex thrir einn mult tveir atta plus mult sam div null minus niu fimm 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_5_6_+_1_7_2_-_0_=_9_÷_4_x_8_3, best cost 137.094 + 10723.9 = 10861 over 1474 frames.
+kk1_5_6_+_1_7_2_-_0_=_9_÷_4_x_8_3 niu sex plus einn sjo tveir minus null sam niu div plus mult atta thrir 
+LOG (lattice-add-penalty[5.5.183~1-9f981]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 20 lattices.
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_5_=_6_1_3_2_7_9_8_4_-_÷_0_+_x, best cost 138.085 + 11161.9 = 11300 over 1558 frames.
+kk1_5_=_6_1_3_2_7_9_8_4_-_÷_0_+_x fimm sam sex einn thrir tveir sjo niu plus minus div null plus mult 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_6_1_7_÷_2_+_x_8_-_9_0_=_4_3_5, best cost 137.736 + 10479.8 = 10617.5 over 1428 frames.
+kk1_6_1_7_÷_2_+_x_8_-_9_0_=_4_3_5 sex einn mult div tveir plus mult atta minus niu null sam plus thrir fimm 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_6_8_5_-_+_4_1_7_9_=_2_0_x_3_÷, best cost 152.021 + 10903.2 = 11055.3 over 1475 frames.
+kk1_6_8_5_-_+_4_1_7_9_=_2_0_x_3_÷ einn sex atta niu minus plus plus einn sjo niu sam null tveir null mult thrir div 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_9_6_x_5_2_1_=_3_8_4_-_÷_7_+_0, best cost 138.855 + 10261.5 = 10400.4 over 1400 frames.
+kk1_9_6_x_5_2_1_=_3_8_4_-_÷_7_+_0 niu sex mult fimm tveir einn sam thrir atta fjorir minus div sjo plus null 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_=_÷_5_x_3_1_-_6_8_7_2_9_+_4_0, best cost 147.737 + 11487.1 = 11634.8 over 1582 frames.
+kk1_=_÷_5_x_3_1_-_6_8_7_2_9_+_4_0 sam div mult mult thrir einn minus sex atta sjo plus niu plus fjorir plus 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_x_5_=_-_8_6_+_7_0_4_1_9_2_÷_3, best cost 133.074 + 9186.43 = 9319.51 over 1261 frames.
+kk1_x_5_=_-_8_6_+_7_0_4_1_9_2_÷_3 mult mult sam minus atta sex plus sjo null fjorir einn niu tveir div thrir einn 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:99) For utterance kk1_x_7_-_÷_=_4_8_0_9_1_6_5_2_+_3, best cost 143.46 + 10254 = 10397.5 over 1400 frames.
+kk1_x_7_-_÷_=_4_8_0_9_1_6_5_2_+_3 mult sjo minus div sam fjorir atta null niu einn sex fimm tveir plus thrir 
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:124) Overall cost per frame is 7.36107 = 0.0983568 [graph] + 7.26271 [acoustic] over 28962 frames.
+LOG (lattice-best-path[5.5.183~1-9f981]:main():lattice-best-path.cc:128) Done 20 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Apr 15 22:09:31 GMT 2019, elapsed time 0 seconds

@@ -1,0 +1,16 @@
+<SIL> SIL
+einn EINN
+tveir TVEIR
+thrir THRIR
+fjorir FJORIR
+fimm FIMM
+sex SEX
+sjo SJO
+atta ATTA
+niu NIU
+null NULL
+plus PLUS
+minus MINUS
+mult SINNUM
+div DEILTMED
+sam SAMASEM
