@@ -1,7 +1,10 @@
 
 '''
+Hinrik Hafsteinsson - Spring 2019
+
 Small script for printing items for a LaTeX table with number info.
 '''
+
 filepath = 'num_utterance_lists/all_nums.txt'
 
 with open(filepath, 'r') as file:
