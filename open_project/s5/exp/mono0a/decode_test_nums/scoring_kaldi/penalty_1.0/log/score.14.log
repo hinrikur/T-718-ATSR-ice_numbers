@@ -1,5 +1,0 @@
-# cat exp/mono0a/decode_test_nums/scoring_kaldi/penalty_1.0/14.txt | compute-wer --text --mode=present ark:exp/mono0a/decode_test_nums/scoring_kaldi/test_filt.txt ark,p:- >& exp/mono0a/decode_test_nums/wer_14_1.0 
-# Started at Mon Apr 15 22:09:34 GMT 2019
-#
-# Accounting: time=0 threads=1
-# Ended (code 0) at Mon Apr 15 22:09:34 GMT 2019, elapsed time 0 seconds

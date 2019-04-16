@@ -1,5 +1,0 @@
-SPEAKER         id       #SENT      #WORD       Corr        Sub        Ins        Del        Err      S.Err
-global          raw         20        300        263         35          6          2         43         18
-global          sys         20        300      87.67      11.67       2.00       0.67      14.33      90.00
-SUM             raw         20        300        263         35          6          2         43         18
-SUM             sys         20        300      87.67      11.67       2.00       0.67      14.33      90.00

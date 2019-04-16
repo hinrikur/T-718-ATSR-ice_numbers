@@ -6,7 +6,7 @@ waves_backup/
 .DS_store
 ./*.pdf
 
-# kaldi subdirectoreis
+# kaldi subdirectories
 ice-numbers-kaldi/s5/data/
 mfcc/
 local_trans/
