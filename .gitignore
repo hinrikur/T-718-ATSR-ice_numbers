@@ -1,10 +1,11 @@
+
 # first level subdirectories
 boll/
 tha/
 waves/
 waves_backup/
 .DS_store
-./*.pdf
+/*.pdf
 
 # kaldi subdirectories
 ice-numbers-kaldi/s5/data/
