@@ -1,6 +1,14 @@
 import random
 import os
 
+'''
+Hinrik Hafsteinsson - Spring 2019
+
+Randomization script used for generating number strings for training/testing material.
+Outputs a directory with 8 .txt files each with 20 lines of 10 randomized digits
+and mathemiatics symbols.
+'''
+
 directions = ['upp', 'niður', 'hægri', 'vinstri']
 numbers = [str(v) for v in random.sample(range(0, 10), 10)]
 functions = ['plús', 'mínus', 'deilt með', 'sinnum']

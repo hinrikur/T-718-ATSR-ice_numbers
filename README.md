@@ -9,4 +9,4 @@ Open project in the course *T-718-ATSR Atoumatic speech recognition* spring seme
 
 ### ice-numbers-kaldi
 
-### utterance_prep
+### Utterance_prep

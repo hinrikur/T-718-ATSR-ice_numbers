@@ -1,12 +1,22 @@
 import sys
 import os
 
+'''
+Hinrik Hafsteinsson - Spring 2019
+
+Script for renaming .wav files.
+Input: Participant ID (e.g. kk1)
+
+Looks for a directory of .wav files with filenames of integers from 1-20
+(the default naming format for each participant). Then loads number strings
+from participant's text file and renames each file with corresponding string.
+'''
 
 wd = os.getcwd()
 
 participant = sys.argv[1]
-name_file = os.path.join(wd, 'utterance_prep/num_utterance_lists/' + participant + '.txt')
-wav_dir = os.path.join(wd, 'waves/' + participant)
+name_file = os.path.join(wd, 'num_utterance_lists/' + participant + '.txt')
+wav_dir = os.path.join(os.path.dirname(wd), 'waves/' + participant)
 # participant = wav_dir[-3:]
 
 def name_dict(name_list):
