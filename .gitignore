@@ -4,7 +4,6 @@ parts/
 waves/
 waves_backup/
 .DS_store
-/*.pdf
 speaker_keys
 
 # kaldi subdirectories
