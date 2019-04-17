@@ -5,6 +5,7 @@ waves/
 waves_backup/
 .DS_store
 speaker_keys
+*.wav
 
 # kaldi subdirectories
 ice-numbers-kaldi/s5/data/
